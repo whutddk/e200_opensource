@@ -1,4 +1,26 @@
- /*                                                                      
+
+//////////////////////////////////////////////////////////////////////////////////
+// Company:    
+// Engineer: 29505
+// Create Date: 2019-01-28 20:59:31
+// Last Modified by:   29505
+// Last Modified time: 2019-02-01 22:07:37
+// Email: 295054118@whut.edu.cn
+// Design Name: e203_defines.v  
+// Module Name:  
+// Project Name:    
+// Target Devices:    
+// Tool Versions:    
+// Description:    
+// 
+// Dependencies:    
+// 
+// Revision:   
+// Revision  
+// Additional Comments:   
+// 
+////////////////////////////////////////////////////////////////////////////////// 
+/*                                                                      
  Copyright 2018 Nuclei System Technology, Inc.                
                                                                          
  Licensed under the Apache License, Version 2.0 (the "License");         
@@ -96,14 +118,14 @@
     `endif//}
 `endif//}
 
-`define E203_PPI_ADDR_BASE    `E203_CFG_PPI_ADDR_BASE  
-`define E203_PPI_BASE_REGION  `E203_CFG_PPI_BASE_REGION
+// `define E203_PPI_ADDR_BASE    `E203_CFG_PPI_ADDR_BASE  
+// `define E203_PPI_BASE_REGION  `E203_CFG_PPI_BASE_REGION
 `define E203_CLINT_ADDR_BASE    `E203_CFG_CLINT_ADDR_BASE  
 `define E203_CLINT_BASE_REGION  `E203_CFG_CLINT_BASE_REGION
 `define E203_PLIC_ADDR_BASE    `E203_CFG_PLIC_ADDR_BASE  
 `define E203_PLIC_BASE_REGION  `E203_CFG_PLIC_BASE_REGION
-`define E203_FIO_ADDR_BASE    `E203_CFG_FIO_ADDR_BASE  
-`define E203_FIO_BASE_REGION  `E203_CFG_FIO_BASE_REGION
+// `define E203_FIO_ADDR_BASE    `E203_CFG_FIO_ADDR_BASE  
+// `define E203_FIO_BASE_REGION  `E203_CFG_FIO_BASE_REGION
                               
 `define E203_DTCM_ADDR_BASE   `E203_CFG_DTCM_ADDR_BASE 
 `define E203_ITCM_ADDR_BASE   `E203_CFG_ITCM_ADDR_BASE 
@@ -134,7 +156,7 @@
    `define E203_DEBUG_HAS_JTAG 
 `endif//}
 
-`define E203_HAS_MEM_ITF
+//`define E203_HAS_MEM_ITF
 `define E203_CFG_SYSMEM_DATA_WIDTH_IS_32
 `ifdef E203_CFG_SYSMEM_DATA_WIDTH_IS_32
     `define E203_SYSMEM_DATA_WIDTH_IS_32
@@ -149,10 +171,10 @@
 //  `define E203_HAS_FIO 
 //`endif//}
 
-`define E203_HAS_PPI 
+//`define E203_HAS_PPI 
 `define E203_HAS_PLIC 
 `define E203_HAS_CLINT 
-`define E203_HAS_FIO 
+// `define E203_HAS_FIO 
 
 `ifdef E203_CFG_HAS_ECC//{
 `endif//}
@@ -192,7 +214,7 @@
     `define E203_ITCM_OUTS_NUM 1 // If no-ECC, ITCM is 1 cycle latency then only allow 1 oustanding for external agent
   `endif//}
 
-  `define E203_HAS_ITCM_EXTITF
+  // `define E203_HAS_ITCM_EXTITF
 `endif//}
 
 /////////////////////////////////////////////////////////////////////////////
@@ -223,7 +245,7 @@
   `endif//}
 
 
-  `define E203_HAS_DTCM_EXTITF
+  // `define E203_HAS_DTCM_EXTITF
 `endif//}
 
 
